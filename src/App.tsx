@@ -4,18 +4,15 @@ import Hello from './hello';
 
 function App() {
   return (
-    <div>
-      <h3>nav is here</h3>
     <BrowserRouter basename="/test/one">
       <Routes>
-        <Route path="" element={
+        <Route index element={
           <Hello></Hello>
         }></Route>
         <Route path="home" element={<Home />} />
         <Route path="about" element={<About />} />
       </Routes>
     </BrowserRouter>
-    </div>
   );
 }
 function Home() {
