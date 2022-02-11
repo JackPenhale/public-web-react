@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter basename="/test/one">
       <Routes>
-        <Route index element={
+        <Route path="" element={
           <Hello></Hello>
         }></Route>
         <Route path="home" element={<Home />} />
