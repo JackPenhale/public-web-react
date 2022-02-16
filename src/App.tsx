@@ -1,9 +1,15 @@
-
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Hello from './hello';
 
 function App() {
-  const base = '/test/one'
+  const [base, setBase] = useState("");
+
+  useEffect(()=>{  if(window.location.hostname.includes('localhost')){
+    setBase("");
+  } else {
+    setBase('/test/one')
+  }})
   return (
     <BrowserRouter basename={base}>
       <Routes>
