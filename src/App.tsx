@@ -9,7 +9,7 @@ function App() {
     setBase("");
   } else {
     setBase('/test/one')
-  }})
+  }}, [])
   return (
     <BrowserRouter basename={base}>
       <Routes>
