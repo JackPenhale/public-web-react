@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Hello from './hello';
 
 function App() {
+  const base = '/test/one'
   return (
-    <BrowserRouter basename="/test/one">
+    <BrowserRouter basename={base}>
       <Routes>
         <Route index element={
           <Hello></Hello>
