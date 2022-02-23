@@ -1,4 +1,4 @@
-name: 
+name: JackPenhale - $public-web-react
 
 on:
   push:
@@ -9,10 +9,10 @@ on:
 env:
   Branches: main
   MainBranch: main
-  NPMRegistry: 
-  InstallCommand: 
-  BuildCommand: 
-  Output: 
+  NPMRegistry: https://registry.npmjs.org/
+  InstallCommand: npm ci
+  BuildCommand: npm run build
+  Output: ./build
 
 jobs:
   build:
