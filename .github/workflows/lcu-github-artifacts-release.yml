@@ -1,4 +1,4 @@
-name: JackPenhale/public-web-docusaurus
+name: JackPenhale/public-web-react
 
 on:
   push:
